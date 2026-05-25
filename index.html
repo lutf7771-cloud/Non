@@ -53,7 +53,7 @@
             font-weight: bold; 
         }
         
-        /* حاوية البطاقة */
+        /* حاوية البطاقة - معبية الشاشة ومتناسقة */
         .card-wrapper {
             display: none;
             width: 100%;
@@ -74,28 +74,27 @@
             box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
         
-        /* ضبط موقع ولون ومقاس الاسم */
+        /* التعديل الجذري: تم وزن الهبوط إلى 72.8% لينزل الاسم داخل المربع الجديد بالملّي */
+        /* التعديل: حجم خط ناعم ومناسب جداً لشاشات الجوال */
         #user-name-overlay {
             position: absolute !important;
-            top: 70.3% !important; 
+            top: 72.8% !important; 
             left: 50% !important;
             transform: translate(-50%, -50%) !important;
-            width: 50% !important;
+            width: 52% !important;
             text-align: center !important;
             font-weight: bold !important;
             color: #000000 !important; /* أسود صريح */
             white-space: nowrap !important;
             direction: rtl !important;
             z-index: 99 !important;
-            
-            /* الحجم الافتراضي للجوالات (تم تصغيره ليكون ناعماً جداً) */
-            font-size: 13px !important; 
+            font-size: 12px !important; 
         }
         
-        /* إذا كان الجهاز آيباد أو شاشة أكبر، يكبر الخط قليلاً ليتناسق مع المساحة */
+        /* ضبط التناسب التلقائي للشاشات الأكبر كالآيباد */
         @media (min-width: 480px) {
             #user-name-overlay {
-                font-size: 18px !important; 
+                font-size: 16px !important; 
             }
         }
         
